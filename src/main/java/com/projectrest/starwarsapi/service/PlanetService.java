@@ -1,5 +1,7 @@
 package com.projectrest.starwarsapi.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +37,10 @@ public class PlanetService {
                 .builder()
                 .message(message + id)
                 .build();
+	}
+
+	public List<Planet> listAll() {
+		return planetRepository.findAll();
 	}
 
 }
