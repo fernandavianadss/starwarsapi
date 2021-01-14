@@ -1,5 +1,7 @@
 package com.projectrest.starwarsapi.dto.request;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
@@ -14,8 +16,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PlanetDTO {
+public class PlanetDTO implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
 	@JsonIgnore
 	private Long id;
 	

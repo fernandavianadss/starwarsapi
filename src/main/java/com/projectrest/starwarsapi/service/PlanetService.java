@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.projectrest.starwarsapi.dto.request.PlanetDTO;
 import com.projectrest.starwarsapi.dto.response.MessageResponseDTO;
 import com.projectrest.starwarsapi.entity.Planet;
+import com.projectrest.starwarsapi.exception.PlanetNotFoundException;
 import com.projectrest.starwarsapi.mapper.PlanetMapper;
 import com.projectrest.starwarsapi.repository.PlanetRepository;
 
@@ -28,7 +29,7 @@ public class PlanetService {
 				
 		Planet planetSave = planetRepository.save(planetToSave);
 		
-		return createMessageResponse(planetSave.getId(), "Created planet with ID ");
+		return createMessageResponse(planetSave.getId(), "Created planet with id ");
 		
 	}
 
@@ -42,5 +43,27 @@ public class PlanetService {
 	public List<Planet> listAll() {
 		return planetRepository.findAll();
 	}
+
+	public Planet findById(Long id) throws PlanetNotFoundException {
+		Planet planet = verifyIfExists(id);
+
+        return planet;
+	}
+
+	public Planet findByName(String name) {
+		Planet planet = verifyIfExistsByName(name);
+
+        return planet;
+	}
+	
+	private Planet verifyIfExists(Long id) throws PlanetNotFoundException {
+	        return planetRepository.findById(id)
+	                .orElseThrow(() -> new PlanetNotFoundException(id));
+	}
+	
+	private Planet verifyIfExistsByName(String name) throws PlanetNotFoundException {
+        return planetRepository.findByName(name)
+                .orElseThrow(() -> new PlanetNotFoundException(name));
+}
 
 }
