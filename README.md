@@ -58,7 +58,7 @@ Ao salvar um planeta, ele se comunica com API do Star Wars, recupera a quantidad
 Ao buscar um planeta informando seu id único, em caso de sucesso é retornado os dados do planeta, caso não encontre é informada a mensagem de que o planeta não foi encontrado.
 
 
-<h6><b>Busca um planeta po nome:</b></h6> 
+<h6><b>Busca um planeta por nome:</b></h6> 
 
 ```
 (GET) http://localhost:8080/planets/name/{name}
