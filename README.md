@@ -34,9 +34,9 @@ Salvar um determinado planeta :
 
 ```
 {
-  "name": "Endor",
-  "climate": "temperate",
-  "terrain": "forests, mountains, lakes"
+  "name": "string",
+  "climate": "string",
+  "terrain": "string"
 }
 ```
 
