@@ -57,4 +57,6 @@ Remover planeta :
 
 <h3><b>API pública utilizada: https://swapi.dev/about</b></h3>
 
+<h3><b>https://starwarsapirest.herokuapp.com/swagger-ui.html</b></h3>
+
 Ao salvar o planeta, ele se comunica com API do Star Wars, recupera a quantidade de aparições e finaliza o processo de salvar exibindo uma mensagem de que o planeta foi criado com seu id.
