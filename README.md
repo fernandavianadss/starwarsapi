@@ -7,7 +7,7 @@
 Informações para uso da API pelo localhost:
 
 Para acessar é necessário configurar o servidor do Postgres, criando a base de dados star wars.
-No arquivo application.properties do Spring na propriedade spring.profiles.active=test alterar o valor para dev.
+No arquivo application.properties do Spring na propriedade spring.profiles.active alterar o valor para dev.
 
 Informações para uso da API pelo Heroku:
 
