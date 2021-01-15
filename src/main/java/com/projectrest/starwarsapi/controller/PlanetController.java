@@ -1,9 +1,11 @@
 package com.projectrest.starwarsapi.controller;
 
+import java.net.URISyntaxException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,7 +31,7 @@ public class PlanetController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public MessageResponseDTO createPlanet(@RequestBody PlanetDTO planetDTO) {
+	public MessageResponseDTO createPlanet(@RequestBody PlanetDTO planetDTO) throws PlanetNotFoundException, URISyntaxException {
 		return planetService.createPlanet(planetDTO);
 	}
 	
@@ -47,4 +49,13 @@ public class PlanetController {
     public Planet findById(@PathVariable Long id) throws PlanetNotFoundException {
         return planetService.findById(id);
     }
+	
+	@DeleteMapping("/{id}")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void deleteById(@PathVariable Long id) throws PlanetNotFoundException {
+		planetService.deleteById(id);
+	}
+	
+	
+	
 }

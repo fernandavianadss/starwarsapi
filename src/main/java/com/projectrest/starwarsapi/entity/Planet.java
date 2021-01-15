@@ -34,4 +34,8 @@ public class Planet implements Serializable{
     
     @Column(nullable = false)
 	private String terrain;
+    
+    private Integer appearance;
+    
+    
 }
