@@ -64,7 +64,8 @@ Ao buscar um planeta informando seu id único, em caso de sucesso é retornado o
 ```
 Ao buscar um planeta informando seu nome, em caso de sucesso é retornado os dados do planeta, caso não encontre é informada a mensagem de que o planeta não foi encontrado.
 
-</b></h6>Remover planeta:</b></h6> 
+<h6><b>Remover planeta:</b></h6> 
+
 ```
 (DELETE) http://localhost:8080/planets/{id}
 ```
