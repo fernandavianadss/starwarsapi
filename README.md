@@ -11,7 +11,7 @@ No arquivo application.properties do Spring na propriedade spring.profiles.activ
 
 <h3><b>Funcionalidades:</b></h3>
 
-* Adicionar um planeta (com name, climate e terrain)
+* Adicionar um planeta
 * Listar planetas
 * Buscar por nome
 * Buscar por ID
