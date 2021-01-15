@@ -4,12 +4,12 @@
 
 `Java 11`, `Spring Boot`, `Spring Data`, `Postgres`, `Swagger` e `Heroku`
 
-Informações para uso da API pelo localhost:
+<h4><b>Informações para uso da API pelo localhost</b></h4>
 
 Para acessar é necessário configurar o servidor do Postgres, criando a base de dados star wars.
 No arquivo application.properties do Spring na propriedade spring.profiles.active alterar o valor para dev.
 
-Informações para uso da API pelo Heroku:
+<h4><b>Informações para uso da API pelo Heroku</b></h4>
 
 Para acessar a aplicação na web é necessário acessar o endereço abaixo:
 <h5><b>Link da aplicação: https://starwarsapirest.herokuapp.com/swagger-ui.html</b></h5>
