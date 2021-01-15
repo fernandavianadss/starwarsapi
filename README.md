@@ -29,7 +29,7 @@ Para acessar a aplicação na web é necessário acessar o endereço abaixo:
 ```
 (GET) http://localhost:8080/planets
 ```
-Lista todos os planetas existentes salvos
+Lista todos os planetas existentes salvos.
 
 
 <h6><b>Salvar um determinado planeta</b></h6>
@@ -57,6 +57,7 @@ Ao salvar um planeta, ele se comunica com API do Star Wars, recupera a quantidad
 
 Ao buscar um planeta informando seu id único, em caso de sucesso é retornado os dados do planeta, caso não encontre é informada a mensagem de que o planeta não foi encontrado.
 
+
 <h6><b>Busca um planeta po nome:</b></h6> 
 
 ```
@@ -64,11 +65,13 @@ Ao buscar um planeta informando seu id único, em caso de sucesso é retornado o
 ```
 Ao buscar um planeta informando seu nome, em caso de sucesso é retornado os dados do planeta, caso não encontre é informada a mensagem de que o planeta não foi encontrado.
 
+
 <h6><b>Remover planeta:</b></h6> 
 
 ```
 (DELETE) http://localhost:8080/planets/{id}
 ```
 Ao informar o id do planeta para removoção, em caso de sucesso é finalizado a ação, caso não encontre é informada uma mensagem de que o planeta não foi encontrado.
+
 
 <h3><b>API pública utilizada: https://swapi.dev/about</b></h3>
