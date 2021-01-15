@@ -55,6 +55,6 @@ Remover planeta :
 (DELETE) http://localhost:8080/planets/{id}
 ```
 
-Consumindo a API pública do Star Wars: https://swapi.dev/about
+<h3><b>API pública utilizada: https://swapi.dev/about</b></h3>
 
 Ao salvar o planeta, ele se comunica com API do Star Wars, recupera a quantidade de aparições e finaliza o processo de salvar exibindo uma mensagem de que o planeta foi criado com seu id.
