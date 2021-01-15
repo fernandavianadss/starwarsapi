@@ -24,7 +24,7 @@ Para acessar a aplicação na web é necessário acessar o endereço abaixo:
 
 <h3><b>EndPoints da API:</b></h3>
 
-Listar os planetas Salvos : 
+<h6><b>Listar os planetas Salvos</b></h6>
 
 ```
 (GET) http://localhost:8080/planets
@@ -32,7 +32,7 @@ Listar os planetas Salvos :
 Lista todos os planetas existentes salvos
 
 
-Salvar um determinado planeta : 
+<h6><b>Salvar um determinado planeta</b></h6>
 ```
 (POST) http://localhost:8080/planets 
 ```
