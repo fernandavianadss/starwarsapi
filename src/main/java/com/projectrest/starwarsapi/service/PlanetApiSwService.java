@@ -26,10 +26,10 @@ public class PlanetApiSwService {
 	public static final String SWAPI_BASE_URL = "https://swapi.dev";
 	public static final String SWAPI_PLANETS_RESOURCE = "/api/planets/";
 
-	public List<PlanetApiSw> getSWAPIPlanet(String nome) throws URISyntaxException {
+	public List<PlanetApiSw> getSWAPIPlanet(String name) throws URISyntaxException {
 
 		URIBuilder searchURL = new URIBuilder(PlanetApiSwService.SWAPI_BASE_URL)
-				.setPath(PlanetApiSwService.SWAPI_PLANETS_RESOURCE).addParameter("search", nome)
+				.setPath(PlanetApiSwService.SWAPI_PLANETS_RESOURCE).addParameter("search", name)
 				.setCharset(Charset.forName("UTF-8"));
 
 		PlanetApiSwResponseDTO results = restTemplate.getForObject(searchURL.build(), PlanetApiSwResponseDTO.class);

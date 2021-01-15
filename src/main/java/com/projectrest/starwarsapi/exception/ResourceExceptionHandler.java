@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
-	
+
 	@ExceptionHandler(PlanetNotFoundException.class)
-	public ResponseEntity<StandardError> resourceNotFound(PlanetNotFoundException e, HttpServletRequest request){
-		
+	public ResponseEntity<StandardError> resourceNotFound(PlanetNotFoundException e, HttpServletRequest request) {
+
 		HttpStatus status = HttpStatus.NOT_FOUND;
 		StandardError err = new StandardError(Instant.now(), status.value(), e.getMessage(), request.getRequestURI());
-		
+
 		return ResponseEntity.status(status).body(err);
 	}
 }

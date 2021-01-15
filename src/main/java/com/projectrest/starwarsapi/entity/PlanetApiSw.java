@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PlanetApiSw {
-	
-    String name;
-    String[] films;
+
+	String name;
+	String[] films;
 }

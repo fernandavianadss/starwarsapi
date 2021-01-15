@@ -18,24 +18,23 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Planet implements Serializable{
-	
+public class Planet implements Serializable {
+
 	private static final long serialVersionUID = 1L;
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-    
-    @Column(nullable = false)
+
+	@Column(nullable = false)
 	private String name;
-    
-    @Column(nullable = false)
+
+	@Column(nullable = false)
 	private String climate;
-    
-    @Column(nullable = false)
+
+	@Column(nullable = false)
 	private String terrain;
-    
-    private Integer appearance;
-    
-    
+
+	private Integer appearance;
+
 }

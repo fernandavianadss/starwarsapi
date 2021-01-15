@@ -31,7 +31,7 @@ public class PlanetService {
 
 		Planet planetToSave = planetMapper.toModel(planetDTO);
 
-		planetToSave.setAppearance(quantidadeFilmesPorNome(planetToSave.getName()));
+		planetToSave.setAppearance(appearancePlanetFilms(planetToSave.getName()));
 
 		Planet planetSave = planetRepository.save(planetToSave);
 
@@ -39,7 +39,7 @@ public class PlanetService {
 
 	}
 
-	public Integer quantidadeFilmesPorNome(String name) throws URISyntaxException, PlanetNotFoundException {
+	public Integer appearancePlanetFilms(String name) throws URISyntaxException, PlanetNotFoundException {
 
 		return verifyIfExistsPlanetApiSw(name).stream().filter(p -> p.getName().equalsIgnoreCase(name)).map(p -> {
 			if (p.getFilms() == null)

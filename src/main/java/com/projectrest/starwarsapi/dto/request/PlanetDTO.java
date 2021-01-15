@@ -34,6 +34,4 @@ public class PlanetDTO implements Serializable {
 	@NotEmpty
     @Size(min = 2, max = 100)
 	private String terrain;
-	
-	
 }

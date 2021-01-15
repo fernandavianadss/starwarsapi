@@ -16,7 +16,7 @@ public class PlanetMapperTest {
 	private final PlanetMapper planetMapper = PlanetMapper.INSTANCE;
 
 	@Test
-	void testGivenPersonDTOThenReturnPersonEntity() {
+	void testGivenPlanetDTOThenReturnPersonEntity() {
 
 		PlanetDTO planetDTO = PlanetUtils.createFakeDTO();
 		Planet planet = planetMapper.toModel(planetDTO);
@@ -28,7 +28,7 @@ public class PlanetMapperTest {
 	}
 
 	@Test
-	void testGivenPersonEntityThenReturnPersonDTO() {
+	void testGivenPlanetEntityThenReturnPersonDTO() {
 		Planet planet = PlanetUtils.createFakeEntity();
 		PlanetDTO planetDTO = planetMapper.toDTO(planet);
 

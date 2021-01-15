@@ -32,7 +32,7 @@ public class PlanetRepositoryTest {
     private PlanetApiSwService planetApiSwService;
 
     @Test
-    void testGivenPersonDTOThenReturnSavedMessage() throws PlanetNotFoundException, URISyntaxException {
+    void testGivenPlanetDTOThenReturnSavedMessage() throws PlanetNotFoundException, URISyntaxException {
         PlanetDTO planetDTO = PlanetUtils.createFakeDTO();
         Planet expectedSavedPlanet = PlanetUtils.createFakeEntity();
 

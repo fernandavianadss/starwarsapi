@@ -27,45 +27,44 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @RequestMapping("/planets")
-@Api(value = "API Rest Colaboradores")
+@Api(value = "API REST Star Wars")
 @CrossOrigin(origins = "*")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PlanetController {
-	
+
 	private PlanetService planetService;
-	
+
 	@PostMapping
 	@ApiOperation(value = "Adiciona um planeta")
 	@ResponseStatus(HttpStatus.CREATED)
-	public MessageResponseDTO createPlanet(@RequestBody PlanetDTO planetDTO) throws PlanetNotFoundException, URISyntaxException {
+	public MessageResponseDTO createPlanet(@RequestBody PlanetDTO planetDTO)
+			throws PlanetNotFoundException, URISyntaxException {
 		return planetService.createPlanet(planetDTO);
 	}
-	
+
 	@GetMapping
 	@ApiOperation(value = "Lista planetas")
 	public List<Planet> listAll() {
 		return planetService.listAll();
 	}
-	
+
 	@GetMapping("name/{name}")
 	@ApiOperation(value = "Busca por nome")
-	public Planet findByName(@PathVariable("name") String name) throws PlanetNotFoundException{	
+	public Planet findByName(@PathVariable("name") String name) throws PlanetNotFoundException {
 		return planetService.findByName(name);
 	}
-	
+
 	@GetMapping("/{id}")
 	@ApiOperation(value = "Busca por id")
-    public Planet findById(@PathVariable Long id) throws PlanetNotFoundException {
-        return planetService.findById(id);
-    }
-	
+	public Planet findById(@PathVariable Long id) throws PlanetNotFoundException {
+		return planetService.findById(id);
+	}
+
 	@DeleteMapping("/{id}")
 	@ApiOperation(value = "Remove planeta")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deleteById(@PathVariable Long id) throws PlanetNotFoundException {
 		planetService.deleteById(id);
 	}
-	
-	
-	
+
 }
