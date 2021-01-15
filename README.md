@@ -4,20 +4,18 @@
 
 `Java 11`, `Spring Boot`, `Spring Data` e `Postgres`
 
-Obs: para executar a API foi utilizada aIDE Spring Tool Suit (STS)
+Informações para uso da API:
 
-Informações Importantes para uso da API:
-
-Para utilizar a API é necessário configurar o servidor do MongoDB.
-Arquivo de configuração application.properties do Spring: spring.data.mongodb.host=localhost spring.data.mongodb.port=27017 spring.data.mongodb.database=b2w
+Para utilizar a API é necessário configurar o servidor do Postgres.
+No arquivo application.properties do Spring na propriedade spring.profiles.active=test alterar o valor para dev.
 
 <h3><b>Funcionalidades:</b></h3>
 
 Adicionar um planeta (com name, climate e terrain)
-Listar planetas
-Buscar por nome
-Buscar por ID
-Remover planeta
+* Listar planetas
+* Buscar por nome
+* Buscar por ID
+* Remover planeta
 
 EndPoints da API :
 
