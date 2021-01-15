@@ -1,8 +1,8 @@
 # Star Wars API REST
 
-Tecnologias utilizadas:
+### Tecnologias usadas:
 
-*Java 11 *Spring Boot *Spring Data *Postgres
+`Java 11`, `Spring Boot` `Spring Data` `Postgres`
 
 Obs: para executar a API foi utilizada aIDE Spring Tool Suit (STS)
 
