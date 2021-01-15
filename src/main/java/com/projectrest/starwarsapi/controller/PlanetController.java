@@ -23,7 +23,7 @@ import com.projectrest.starwarsapi.service.PlanetService;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("/planet")
+@RequestMapping("/planets")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PlanetController {
 	
