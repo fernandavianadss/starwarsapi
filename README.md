@@ -12,7 +12,7 @@ No arquivo application.properties do Spring na propriedade spring.profiles.activ
 Informações para uso da API pelo Heroku:
 
 Para acessar a aplicação na web é necessário acessar o endereço abaixo:
-<h3><b>Link da aplicação: https://starwarsapirest.herokuapp.com/swagger-ui.html</b></h3>
+<h5><b>Link da aplicação: https://starwarsapirest.herokuapp.com/swagger-ui.html</b></h5>
 
 <h3><b>Funcionalidades:</b></h3>
 
