@@ -21,9 +21,9 @@ Remover planeta
 
 EndPoints da API :
 
-Listar os planetas Salvos : (GET) http://localhost:8080/planetas
+Listar os planetas Salvos : (GET) http://localhost:8080/planets
 
-Salvar um determinado planteta : (POST) http://localhost:8080/planetas 
+Salvar um determinado planteta : (POST) http://localhost:8080/planets 
 
 Informando um JSON:
 
@@ -32,18 +32,18 @@ Informando um JSON:
 Buscar um planeta por id : 
 
 ```
-(GET) http://localhost:8080/planet/{id}
+(GET) http://localhost:8080/planets/{id}
 ```
 
 Busca um planeta po nome : 
 
 ```
-(GET) http://localhost:8080/planetas/name/{name}
+(GET) http://localhost:8080/planets/name/{name}
 ```
 
 Remover planeta : 
 ```
-(DELETE) http://localhost:8080/planetas/{id}
+(DELETE) http://localhost:8080/planets/{id}
 ```
 
 Consumindo a API pública do Star Wars: https://swapi.dev/about
