@@ -71,7 +71,7 @@ Ao buscar um planeta informando seu nome, em caso de sucesso é retornado os dad
 ```
 (DELETE) http://localhost:8080/planets/{id}
 ```
-Ao informar o id do planeta para removoção, em caso de sucesso é finalizado a ação, caso não encontre é informada uma mensagem de que o planeta não foi encontrado.
+Ao informar o id do planeta para remoção, em caso de sucesso é finalizado a ação, caso não encontre é informada uma mensagem de que o planeta não foi encontrado.
 
 
 <h3><b>API pública utilizada: https://swapi.dev/about</b></h3>
