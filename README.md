@@ -49,7 +49,7 @@ Lista todos os planetas existentes salvos.
 Ao salvar um planeta, ele se comunica com API do Star Wars, recupera a quantidade de aparições e finaliza o processo de salvar exibindo uma mensagem de que o planeta foi criado com seu id respectivo.
 
 
-<h6><b>Buscar um planeta por id:</b></h6>
+<h6><b>Buscar um planeta por id</b></h6>
 
 ```
 (GET) http://localhost:8080/planets/{id}
@@ -58,7 +58,7 @@ Ao salvar um planeta, ele se comunica com API do Star Wars, recupera a quantidad
 Ao buscar um planeta informando seu id único, em caso de sucesso é retornado os dados do planeta, caso não encontre é informada a mensagem de que o planeta não foi encontrado.
 
 
-<h6><b>Busca um planeta por nome:</b></h6> 
+<h6><b>Busca um planeta por nome</b></h6> 
 
 ```
 (GET) http://localhost:8080/planets/name/{name}
@@ -66,7 +66,7 @@ Ao buscar um planeta informando seu id único, em caso de sucesso é retornado o
 Ao buscar um planeta informando seu nome, em caso de sucesso é retornado os dados do planeta, caso não encontre é informada a mensagem de que o planeta não foi encontrado.
 
 
-<h6><b>Remover planeta:</b></h6> 
+<h6><b>Remover planeta</b></h6> 
 
 ```
 (DELETE) http://localhost:8080/planets/{id}
